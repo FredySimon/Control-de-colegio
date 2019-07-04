@@ -1,0 +1,990 @@
+{
+	"info": {
+		"_postman_id": "20d45072-0edb-45e1-8a3b-f742ccd7ed41",
+		"name": "ControlDeColegio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Carlos",
+							"type": "text"
+						},
+						{
+							"key": "surname",
+							"value": "Reyes",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "cr@outlook.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "cr",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/saveAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"saveAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "fs@outlook.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "fs",
+							"type": "text"
+						},
+						{
+							"key": "gettoken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/loginAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"loginAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Admin",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTAwZWJkM2QyMTVjYzhmMGZiYWMiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODMxMTA0fQ.TQkBna1L3x4XbpC7WXDN0AI6HCLKgQGPRo8XK1QaC7M",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Fredy",
+							"type": "text"
+						},
+						{
+							"key": "surname",
+							"value": "Simon",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/updateAdmin/5c7f100ebd3d215cc8f0fbac",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"updateAdmin",
+						"5c7f100ebd3d215cc8f0fbac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Admin",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTAwZWJkM2QyMTVjYzhmMGZiYWMiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODMxMTYwfQ.Kt8lt_donGv3zA3lsJFaXiVub-uTobbEQduopNJ85cc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v1/deleteAdmin/5c7f100ebd3d215cc8f0fbac",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"deleteAdmin",
+						"5c7f100ebd3d215cc8f0fbac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v1/listAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"listAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Teacher",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTA5MWJkM2QyMTVjYzhmMGZiYWQiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODMxMjY2fQ.i33YuwMWz3XGsf-o8rf3H8fPhtYJDOxgMu1G980-UlA",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Giovanni ",
+							"type": "text"
+						},
+						{
+							"key": "surname",
+							"value": "De Leon",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "gl@outlook.com",
+							"type": "text"
+						},
+						{
+							"key": "course",
+							"value": "Ingles",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "gl",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/saveTeacher/5c7f1091bd3d215cc8f0fbad",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"saveTeacher",
+						"5c7f1091bd3d215cc8f0fbad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Teacher",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "cr@outlook.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "cr",
+							"type": "text"
+						},
+						{
+							"key": "gettoken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v2/loginTeacher",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v2",
+						"loginTeacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Teacher",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTA5MWJkM2QyMTVjYzhmMGZiYWQiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODMyNjk1fQ.VH-ryqynlnJ3U4V3btxglVnOfLKotOn0nIZSw7ZQZkE",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Brayan",
+							"type": "text"
+						},
+						{
+							"key": "surname",
+							"value": "Joj",
+							"type": "text"
+						},
+						{
+							"key": "course",
+							"value": "Laboratorio",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/updateTeacher/5c7f1091bd3d215cc8f0fbad/5c7f1128bd3d215cc8f0fbb0",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"updateTeacher",
+						"5c7f1091bd3d215cc8f0fbad",
+						"5c7f1128bd3d215cc8f0fbb0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Teacher",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZlMGM0Zjk2NTJhZjA1NDg1YWM2NDMiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJpYXQiOjE1NTA5NDM3ODJ9.V1VC3Aa8-WUV-eSAxEfGo3axPmI_l3xnaNr6qHFfF8A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v1/deleteTeacher/5c6e0c4f9652af05485ac643/5c717ffa5597803060cf41b2",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"deleteTeacher",
+						"5c6e0c4f9652af05485ac643",
+						"5c717ffa5597803060cf41b2"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Teacher",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTA5MWJkM2QyMTVjYzhmMGZiYWQiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODMyODEyfQ.KEoB5iwLXXl7m_kJd6M54_F6NqZKYkMYq7A3Q5q0IhA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v1/listTeacher/5c7f1091bd3d215cc8f0fbad",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"listTeacher",
+						"5c7f1091bd3d215cc8f0fbad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Career",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTA5MWJkM2QyMTVjYzhmMGZiYWQiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODgxNjE1fQ.YFWsjHz59-bHxl6LelNyzLeX4CqCpEcU2s2Rx_OCwH0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Informatica",
+							"type": "text"
+						},
+						{
+							"key": "workingDay",
+							"value": "Vespertina",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/saveCareer/5c7f1091bd3d215cc8f0fbad",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"saveCareer",
+						"5c7f1091bd3d215cc8f0fbad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Career",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZlMGM0Zjk2NTJhZjA1NDg1YWM2NDMiLCJuYW1lIjoiRnJlZHkiLCJpYXQiOjE1NTEwMzU4MjR9.xUOML4mCAEozxoM8djjpPA7mervYEEemqR9IKm85_jI",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Informatica",
+							"type": "text"
+						},
+						{
+							"key": "workingDay",
+							"value": "Vespertina",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/updateCareer/5c6e0c4f9652af05485ac643/5c72ebfec7486a54e4230006",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"updateCareer",
+						"5c6e0c4f9652af05485ac643",
+						"5c72ebfec7486a54e4230006"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Career",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTA5MWJkM2QyMTVjYzhmMGZiYWQiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODgxNjE1fQ.YFWsjHz59-bHxl6LelNyzLeX4CqCpEcU2s2Rx_OCwH0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v1/deleteCareer/5c7f1091bd3d215cc8f0fbad/5c7f32a977ea3234e4b64e25",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"deleteCareer",
+						"5c7f1091bd3d215cc8f0fbad",
+						"5c7f32a977ea3234e4b64e25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTA5MWJkM2QyMTVjYzhmMGZiYWQiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODgxNjE1fQ.YFWsjHz59-bHxl6LelNyzLeX4CqCpEcU2s2Rx_OCwH0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Oscar",
+							"type": "text"
+						},
+						{
+							"key": "surname",
+							"value": "Racso",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "oc@outlook.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "oc",
+							"type": "text"
+						},
+						{
+							"key": "license",
+							"value": "2013654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/saveStudent/5c7f1091bd3d215cc8f0fbad/5c7f10f5bd3d215cc8f0fbae/5c7fd6b3dc7ac56450acb75f",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"saveStudent",
+						"5c7f1091bd3d215cc8f0fbad",
+						"5c7f10f5bd3d215cc8f0fbae",
+						"5c7fd6b3dc7ac56450acb75f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jl@outlook.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jl",
+							"type": "text"
+						},
+						{
+							"key": "gettoken",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v3/loginStudent",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v3",
+						"loginStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZlMGM0Zjk2NTJhZjA1NDg1YWM2NDMiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJpYXQiOjE1NTA5MzcxNDl9.2iwinyP-GiH_Q1IKzgdKhHF6L1p6O7j1cg1XIfwJbBE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Herberth",
+							"type": "text"
+						},
+						{
+							"key": "surname",
+							"value": "Macz",
+							"type": "text"
+						},
+						{
+							"key": "license",
+							"value": "2016224",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v1/updateStudent/5c6e0c4f9652af05485ac643/5c71638dcfb45a67eca6ab31",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"updateStudent",
+						"5c6e0c4f9652af05485ac643",
+						"5c71638dcfb45a67eca6ab31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZlMGM0Zjk2NTJhZjA1NDg1YWM2NDMiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJpYXQiOjE1NTA5MzcxNDl9.2iwinyP-GiH_Q1IKzgdKhHF6L1p6O7j1cg1XIfwJbBE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v1/deleteStudent/5c6e0c4f9652af05485ac643/5c71638dcfb45a67eca6ab31",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"deleteStudent",
+						"5c6e0c4f9652af05485ac643",
+						"5c71638dcfb45a67eca6ab31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzZlMGM0Zjk2NTJhZjA1NDg1YWM2NDMiLCJuYW1lIjoiRnJlZHkiLCJpYXQiOjE1NTExMTMxMDZ9.5SCwa_xVIUZi8LtV6iwVAPx7Au2Awul2Hz4__dWPPSU",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:3300/v1/listStudent/5c6e0c4f9652af05485ac643",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"listStudent",
+						"5c6e0c4f9652af05485ac643"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Activity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTEyOGJkM2QyMTVjYzhmMGZiYjAiLCJuYW1lIjoiQnJheWFuIiwic3VybmFtZSI6IkpvaiIsImVtYWlsIjoiYmpAb3V0bG9vay5jb20iLCJjb3Vyc2UiOiJMYWJvcmF0b3JpbyIsImlhdCI6MTU1MTgzMzMwMX0.Yy_OyrXy5s2HJaVJ9oqOWtRjI5vXaVQ4jbNlu9pnIlk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Tarea 2",
+							"type": "text"
+						},
+						{
+							"key": "dateOfDelivery",
+							"value": "05/03/2019",
+							"type": "text"
+						},
+						{
+							"key": "weighing",
+							"value": "10 pts",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v2/saveActivity/5c7f1128bd3d215cc8f0fbb0",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v2",
+						"saveActivity",
+						"5c7f1128bd3d215cc8f0fbb0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Activity",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTEyOGJkM2QyMTVjYzhmMGZiYjAiLCJuYW1lIjoiQnJheWFuIiwic3VybmFtZSI6IkpvaiIsImVtYWlsIjoiYmpAb3V0bG9vay5jb20iLCJjb3Vyc2UiOiJMYWJvcmF0b3JpbyIsImlhdCI6MTU1MTgzNDA5N30.XQ61Te6Jgw3rhu1W6Sd7ARfQIRPl-13FzcpuSHXjN2A",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Tarea",
+							"type": "text"
+						},
+						{
+							"key": "dateOfDelivery",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "weighing",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3300/v2/updateActivity/5c7f1128bd3d215cc8f0fbb0/5c7f197af2da775308881daf",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v2",
+						"updateActivity",
+						"5c7f1128bd3d215cc8f0fbb0",
+						"5c7f197af2da775308881daf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Activity",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTEyOGJkM2QyMTVjYzhmMGZiYjAiLCJuYW1lIjoiQnJheWFuIiwic3VybmFtZSI6IkpvaiIsImVtYWlsIjoiYmpAb3V0bG9vay5jb20iLCJjb3Vyc2UiOiJMYWJvcmF0b3JpbyIsImlhdCI6MTU1MTgzODM4Mn0.Lmp-LpyK8WKKt2NcH8CCaK3jXn4yiJ_crNCarrFE0Tg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v2/deleteActivity/5c7f1128bd3d215cc8f0fbb0/5c7f2ca0d7702f54844556b5",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v2",
+						"deleteActivity",
+						"5c7f1128bd3d215cc8f0fbb0",
+						"5c7f2ca0d7702f54844556b5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teacher List Student",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTBmNWJkM2QyMTVjYzhmMGZiYWUiLCJuYW1lIjoiQ2VmZXJpbm8iLCJzdXJuYW1lIjoiUm9kcmlndWV6IiwiZW1haWwiOiJjckBvdXRsb29rLmNvbSIsImNvdXJzZSI6Ik1hdGVtw6F0aWNhcyIsImlhdCI6MTU1MTg4MjE5N30.vL7iLfEAJTnIrSmNyVI1Cy6n1llikon5xti54CAkY4A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v2/listStudentTeacher/5c7f10f5bd3d215cc8f0fbae",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v2",
+						"listStudentTeacher",
+						"5c7f10f5bd3d215cc8f0fbae"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Teacher With Student",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1YzdmMTA5MWJkM2QyMTVjYzhmMGZiYWQiLCJuYW1lIjoiRnJlZHkiLCJzdXJuYW1lIjoiU2ltb24iLCJlbWFpbCI6ImZzQG91dGxvb2suY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTUxODgxNjE1fQ.YFWsjHz59-bHxl6LelNyzLeX4CqCpEcU2s2Rx_OCwH0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3300/v1/listTeacherWithStudent/5c7f1091bd3d215cc8f0fbad",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"v1",
+						"listTeacherWithStudent",
+						"5c7f1091bd3d215cc8f0fbad"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
